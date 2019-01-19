@@ -28,7 +28,7 @@ $mail->Host = 'smtp.gmail.com';
 $mail->Port = 587;// TCP port to connect to
 $mail->CharSet = 'UTF-8';
 $mail->Username ='gustavodevaler@gmail.com'; //Email para enviar
-$mail->Password = 'daiana26?'; //Su password
+$mail->Password = ''; //Su password
 //Agregar destinatario
 $mail->setFrom($email,$nombre);
 $mail->AddAddress('gustavodevaler@gmail.com');//A quien mandar email
