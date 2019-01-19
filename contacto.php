@@ -1,14 +1,42 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Contacto</title>
+<head></title>
 </head>
 <body>
+
 <?php
     $nombre=$_REQUEST['nombre'];
-	$email=$_REQUEST['email'];
+	$str=$_REQUEST['email'];
 	$mensaje=$_REQUEST['mensaje'];
 
+
+	//validacion del mail ingresado.
+
+
+/**
+
+ * @param    string  $str la dirección a validar
+ * @return   boolean
+ 
+ */
+global $result;
+
+function is_valid_email($str)
+{
+
+  $result = (false !== filter_var($str, FILTER_VALIDATE_EMAIL));
+  
+  if ($result)
+  {
+    list($user, $domain) = split('@', $str);
+    
+    $result = checkdnsrr($domain, 'MX');
+
+
+  }
+  
+  return $result;
+}
 
 require_once('PHPMailer_5.2.4/class.PHPMailer.php'); 
 
@@ -30,7 +58,7 @@ $mail->CharSet = 'UTF-8';
 $mail->Username ='gustavodevaler@gmail.com'; //Email para enviar
 $mail->Password = 'daiana26?'; //Su password
 //Agregar destinatario
-$mail->setFrom($email,$nombre);
+$mail->setFrom($str,$nombre);
 $mail->AddAddress('gustavodevaler@gmail.com');//A quien mandar email
 $mail->SMTPKeepAlive = true;  
 $mail->Mailer = "smtp"; 
@@ -48,8 +76,12 @@ if(!$mail->send()) {
   echo 'Error al enviar email';
   echo 'Mailer error: ' . $mail->ErrorInfo;
 } else {
-  echo 'Mail enviado correctamente';
+
+  echo "<script type='text/javascript'>alert ('Mail enviado correctamente');</script>";
+  echo '<meta http-equiv="Refresh" content="1;URL=inicio.html">';
 }
+
+
 ?>
 
 
