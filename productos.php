@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="./css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Gochi+Hand" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="./css/estilos1.css">
 </head>
 <body>
     <header>
@@ -43,6 +44,91 @@
                       </ul>
                     </div>
                   </nav>
+
+<section class="engine"><a href=""></a></section><section class="header4 cid-rfHtGsr0CZ mbr-fullscreen" id="header4-2">
+
+    
+
+    <div class="container">
+        <h1 class="mbr-fonts-style mbr-section-title align-left mbr-black mbr-bold display-1">
+            A ponerse las pilas
+        </h1>
+        <h2 class="mbr-fonts-style mbr-section-subtitle align-left mbr-black mbr-light display-2">
+            A ver si nos salvamos con este proyecto !
+        </h2>
+        
+    </div>
+</section>
+<section class="testimonials1 mbr-section cid-rfHu0Ulwg5" id="testimonials1-5">
+
+    
+    
+    <div class="container">
+        <div class="mbr-row mbr-justify-content-center">
+            <div class="mbr-col-sm-12 mbr-col-md-12">
+                <h2 class="mbr-section-title mbr-fonts-style align-center display-2">
+                    Lo que dicen nuestros fantásticos usuarios
+                </h2>
+            </div>
+            <div class="card mbr-col-sm-12 mbr-col-md-6 mbr-col-lg-4">
+                <div class="card-wrapper">
+                    <p class="mbr-text mbr-fonts-style align-left display-7">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore incidunt molestias, vitae recusandae error ipsam distinctio, ipsum. Quasi optio repellat aliquid odio obcaecati amet odit? Laboriosam, quibusdam autem fugit accusantium!
+                    </p>
+                </div>
+                <div class="signature">
+                    <div class="author-name mbr-fonts-style align-left mbr-bold display-4">
+                        John Smith
+                    </div>
+                    <div class="author-title mbr-fonts-style align-left display-4">
+                        Usuario
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card mbr-col-sm-12 mbr-col-md-6 mbr-col-lg-4">
+                <div class="card-wrapper">
+                    <p class="mbr-text mbr-fonts-style align-left display-7">
+                      Desde que empezamos a amasar la idea de construir una 
+                      plataforma a travezde la cual podamos empezar nuetro nuevo 
+                      negocio  es sin lugar a dudas  un punto de quiebre en nuestras vidas. Con esfuerzo y trabajo, y la ayuda de Rodrigo (si se pone las pilas) comienza hoy una ruta ascendente de logros increibles !!
+                    </p>
+                </div>
+                <div class="signature">
+                    <div class="author-name mbr-fonts-style align-left mbr-bold display-4">
+                        Gustavo Valerio
+                    </div>
+                    <div class="author-title mbr-fonts-style align-left display-4">
+                        Co-equiper
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mbr-col-sm-12 mbr-col-md-6 mbr-col-lg-4">
+                <div class="card-wrapper">
+                    <p class="mbr-text mbr-fonts-style align-left display-7">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore incidunt molestias, vitae recusandae error ipsam distinctio, ipsum. Quasi optio repellat aliquid odio obcaecati amet odit? Laboriosam, quibusdam autem fugit accusantium!
+                    </p>
+                </div>
+                <div class="signature">
+                    <div class="author-name mbr-fonts-style align-left mbr-bold display-4">
+                        John Smith
+                    </div>
+                    <div class="author-title mbr-fonts-style align-left display-4">
+                        Usuario
+                    </div>
+                </div>
+            </div>
+
+            
+
+            
+
+            
+            
+        </div>
+    </div>
+</section>
 
 </body>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
