@@ -78,6 +78,7 @@ window.onload = function () {
 	window.addEventListener(
 		'scroll',
 		function () {
+			console.log(window.pageYOffset);
 			var st = window.pageYOffset || document.documentElement.scrollTop;
 			if (st > lastScrollTop) {
 				if (window.pageYOffset > 380) {
@@ -89,6 +90,26 @@ window.onload = function () {
 				}
 			}
 			lastScrollTop = st;
+			if (window.pageYOffset > 136) {
+				document.getElementById('slide-h1').classList.add('animated');
+				document.getElementById('slide-h1').classList.add('slideInLeft');
+				document.getElementById('slide-h2').classList.add('animated');
+				document.getElementById('slide-h2').classList.add('slideInRight');
+				// document.getElementById('slide-h1').classList.add('delay-1s');
+			} else {
+				document.getElementById('slide-h1').classList.remove('animated');
+				document.getElementById('slide-h1').classList.remove('slideInLeft');
+				document.getElementById('slide-h2').classList.remove('animated');
+				document.getElementById('slide-h2').classList.remove('slideInRight');
+				// document.getElementById('slide-h1').classList.remove('delay-1s');
+			}
+			if (window.pageYOffset > 689) {
+				document.getElementById('zoom-h1').classList.add('animated');
+				document.getElementById('zoom-h1').classList.add('zoomIn');
+			} else {
+				document.getElementById('zoom-h1').classList.remove('animated');
+				document.getElementById('zoom-h1').classList.remove('zoomIn');
+			}
 		},
 		false
 	);
