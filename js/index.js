@@ -80,7 +80,7 @@ window.onload = function () {
 		function () {
 			var st = window.pageYOffset || document.documentElement.scrollTop;
 			if (st > lastScrollTop) {
-				if (window.pageYOffset > 480) {
+				if (window.pageYOffset > 380) {
 					document.getElementById('scroll-btn').style.visibility = 'visible';
 				}
 			} else {
