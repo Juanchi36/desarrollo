@@ -58,3 +58,47 @@ function scaleBannerVideoSize (element) {
 		);
 	});
 }
+
+window.onload = function () {
+	// Cerrar menu hamburguesa despues del click
+	let links = document.getElementsByClassName('nav-link');
+	// console.log(links);
+	for (i = 0; i < links.length; i++) {
+		links[i].addEventListener('click', collapse);
+	}
+
+	function collapse () {
+		$('.navbar-collapse').collapse('hide');
+	}
+
+	// Mostrando boton scroll up
+
+	var lastScrollTop = 0;
+
+	window.addEventListener(
+		'scroll',
+		function () {
+			var st = window.pageYOffset || document.documentElement.scrollTop;
+			if (st > lastScrollTop) {
+				if (window.pageYOffset > 480) {
+					document.getElementById('scroll-btn').style.visibility = 'visible';
+				}
+			} else {
+				if (window.pageYOffset === 0) {
+					document.getElementById('scroll-btn').style.visibility = 'hidden';
+				}
+			}
+			lastScrollTop = st;
+		},
+		false
+	);
+
+	// Logica del scroll up
+
+	let intervalId = 0;
+	document.getElementById('scroll-btn').addEventListener('click', scrollToTop);
+
+	function scrollToTop () {
+		window.scrollTo(0, 0);
+	}
+};

@@ -1,3 +1,7 @@
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	margin: 0;
 }
@@ -94,24 +98,48 @@ header .bg-dark {
 }
 .content p {
 	font-size: 36px;
+	color: #fff !important;
 }
 .chat-icon {
-	position: absolute;
+	position: fixed;
 	color: #fff;
-	background-color: rgb(9, 138, 5);
-	font-size: 53px;
+	background-color: rgba(9, 138, 5, 0.397);
+	font-size: 40px;
 	border-radius: 50px;
-	padding: 0 13px;
-	top: 80%;
+	padding: 5px 13px;
+	top: 85%;
 	left: 92%;
+	z-index: 1000;
 }
-@media only screen and (max-width: 412px) {
+.scroll-icon {
+	position: fixed;
+	top: 72%;
+	left: 92%;
+	z-index: 100;
+	visibility: hidden;
+}
+#scroll-btn {
+	cursor: pointer;
+	background-color: rgba(9, 138, 5, 0.397);
+	color: #fff;
+	font-size: 40px;
+	border-radius: 50px;
+	padding: 8px 22px;
+}
+.productos {
+	min-height: 200%;
+}
+#products-img {
+	filter: opacity(20%);
+}
+@media only screen and (max-width: 512px) {
 	.content {
 		width: 70%;
 	}
 }
 @media only screen and (max-width: 1135px) {
-	.chat-icon {
+	.chat-icon,
+	.scroll-icon {
 		left: 80%;
 	}
 }
