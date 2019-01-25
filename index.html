@@ -15,266 +15,295 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 </head>
 <body>
-  <header>
+    <header></header>
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="#">NE</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" id="btn-menu">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-              <ul class="navbar-nav">
-                <li class="nav-item active">
-                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+        <a class="navbar-brand" href="#">NE</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" id="btn-menu">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#products">Productos</a>
+                    <a class="nav-link" href="#products">Productos</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#servicios">Servicios</a>
+                    <a class="nav-link" href="#servicios">Servicios</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="contacto.html">Contacto</a>
+                    <a class="nav-link" href="contacto.html">Contacto</a>
                 </li>
                 <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Nuestros trabajos
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </div>
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Nuestros trabajos
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
                 </li>
-              </ul>
-            </div>
-          </nav>
-</header>
-<div class="homepage-hero-module">
-    <div class="video-container">
-      <video autoplay loop muted playsinline class="fillWidth">
-        <source src="video/Mock-up.webm" type="video/webm">
-          <source src="video/Mock-up.mp4" type="video/mp4">
-          <source src="video/Mock-up.ogv" type="video/ogv">
-      </video>
-      <div class="content">
-          <h1 class="animated pulse delay-1s">Nuestra Empresa</h1>
-          <p>negocios digitales</p>
-      </div>
-      <div class="chat-icon"><i class="far fa-comments"></i></div>
-      <div class="scroll-icon" ><a id="scroll-btn"><i class="fas fa-angle-double-up"></i></a></div>
-      <!-- <div class="poster hidden">
-        <img src="./video/Mock-up.jpg" alt="">
-      </div> -->
-    </div>
-  </div>
-  <section class="engine"><a href=""></a></section><section class="header4 cid-rfHtGsr0CZ mbr-fullscreen" id="header4-2">
-
-    
-
-    <div class="container" id="products">
-        <h1 class="mbr-fonts-style mbr-section-title align-left mbr-black mbr-bold display-1" id="slide-h1">
-            Nuestros productos
-        </h1>
-        <h2 class="mbr-fonts-style mbr-section-subtitle align-left mbr-black mbr-light display-2" id="slide-h2">
-            Cada uno a la medida de tu negocio.
-        </h2>
-        
-    </div>
-</section>
-
-<section class="features2 mbr-section cid-rfHtS39MIX" id="features2-4">
-
-    
-    
-    <div class="container" id="productos">
-        <div class="mbr-row mbr-justify-content-center">
-            <div class="card mbr-col-sm-12 mbr-col-md-6 mbr-col-lg-3">
-                <div class="card-wrapper">
-                    <div class="card-img">
-                        <amp-img src="assets/images/05.jpg" layout="responsive" width="255" height="170" alt="Mobirise" class="mobirise-loader" id="products-img">
-                            <div placeholder="" class="placeholder">
-                                <div class="mobirise-spinner">
-                                    <em></em>
-                                    <em></em>
-                                    <em></em>
-                                </div></div>
-                            
-                        </amp-img>
-                    </div>
-                    <div class="card-box">
-                        <h4 class="card-title mbr-fonts-style align-center mbr-light display-2">
-                            Rendimiento 
-                        </h4>
-                        <p class="mbr-text mbr-fonts-style text-justify display-4">
-                            Los editores y los anunciantes pueden decidir cómo presentar su contenido y qué proveedores de tecnología utilizar, todo mientras mantienen y mejoran los indicadores clave de rendimiento.
-                        </p>
-                        <div class="mbr-section-btn align-center">
-                            <a class="btn btn-sm btn-secondary display-4" href="">
-                                LEER MÁS
+                <li>
+                    <h4 id="location"></h4>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <section>
+        <article>
+            <div class="homepage-hero-module" id="home">
+                <div class="video-container">
+                    <video autoplay loop muted playsinline class="fillWidth">
+                        <source src="video/Mock-up.webm" type="video/webm">
+                        <source src="video/Mock-up.mp4" type="video/mp4">
+                        <source src="video/Mock-up.ogv" type="video/ogv">
+                    </video>
+                        <div class="content">
+                            <h1 class="animated pulse delay-1s">Nuestra Empresa</h1>
+                            <p>negocios digitales</p>
+                        </div>
+                        <div class="chat-icon">
+                            <i class="far fa-comments"></i>
+                        </div>
+                        <div class="scroll-icon" >
+                            <a id="scroll-btn">
+                                <i class="fas fa-angle-double-up"></i>
                             </a>
+                        </div>
+                </div>
+            </div>
+        </article>
+        <article class="engine">
+            <a href=""></a>
+        </article>
+        <article class="header4 cid-rfHtGsr0CZ mbr-fullscreen" id="header4-2">
+            <div class="container" id="products">
+                <h1 class="mbr-fonts-style mbr-section-title align-left mbr-black mbr-bold display-1" id="slide-h1">
+                    Nuestros productos
+                </h1>
+                <h2 class="mbr-fonts-style mbr-section-subtitle align-left mbr-black mbr-light display-2" id="slide-h2">
+                    Cada uno a la medida de tu negocio.
+                </h2>
+            </div>
+        </article>
+        <article class="features2 mbr-section cid-rfHtS39MIX" id="features2-4">
+            <div class="container" id="productos">
+                <div class="mbr-row mbr-justify-content-center">
+                    <div class="card mbr-col-sm-12 mbr-col-md-6 mbr-col-lg-3">
+                        <div class="card-wrapper">
+                            <div class="card-img">
+                                <amp-img src="assets/images/05.jpg" layout="responsive" width="255" height="170"        alt="Mobirise" class="mobirise-loader" id="products-img">
+                                    <div placeholder="" class="placeholder">
+                                        <div class="mobirise-spinner">
+                                            <em></em>
+                                            <em></em>
+                                            <em></em>
+                                        </div></div>
+                                </amp-img>
+                            </div>
+                            <div class="card-box">
+                                <h4 class="card-title mbr-fonts-style align-center mbr-light display-2">
+                                    Rendimiento 
+                                </h4>
+                                <p class="mbr-text mbr-fonts-style text-justify display-4">
+                                    Los editores y los anunciantes pueden decidir cómo presentar su contenido y qué proveedores de tecnología utilizar, todo mientras mantienen y mejoran los indicadores clave de rendimiento.
+                                </p>
+                                <div class="mbr-section-btn align-center">
+                                    <a class="btn btn-sm btn-secondary display-4" href="">
+                                        LEER MÁS
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mbr-col-sm-12 mbr-col-md-6 mbr-col-lg-3">
+                        <div class="card-wrapper">
+                            <div class="card-img">
+                                <amp-img src="assets/images/01.jpg" layout="responsive" height="170" width="255" alt="Mobirise" class="mobirise-loader">
+                                    <div placeholder="" class="placeholder">
+                                        <div class="mobirise-spinner">
+                                            <em></em>
+                                            <em></em>
+                                            <em></em>
+                                        </div></div>
+                                </amp-img>
+                            </div>
+                            <div class="card-box">
+                                <h4 class="card-title mbr-fonts-style align-center mbr-light display-2">
+                                    Compromisos
+                                </h4>
+                                <p class="mbr-text mbr-fonts-style text-justify display-4">
+                                    Los editores y los anunciantes pueden decidir cómo presentar su contenido y qué proveedores de tecnología utilizar, todo mientras mantienen y mejoran los indicadores clave de rendimiento.
+                                </p>
+                                <div class="mbr-section-btn align-center">
+                                    <a class="btn btn-sm btn-secondary display-4" href="">
+                                        LEER MÁS
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mbr-col-sm-12 mbr-col-md-6 mbr-col-lg-3">
+                        <div class="card-wrapper">
+                            <div class="card-img">
+                                <amp-img src="assets/images/02.jpg" layout="responsive" height="170" width="255" alt="Mobirise" class="mobirise-loader">
+                                    <div placeholder="" class="placeholder">
+                                        <div class="mobirise-spinner">
+                                            <em></em>
+                                            <em></em>
+                                            <em></em>
+                                        </div></div>
+                                </amp-img>
+                            </div>
+                            <div class="card-box">
+                                <h4 class="card-title mbr-fonts-style align-center mbr-light display-2">
+                                    Flexibilidad
+                                </h4>
+                                <p class="mbr-text mbr-fonts-style text-justify display-4">
+                                    Los editores y los anunciantes pueden decidir cómo presentar su contenido y qué proveedores de tecnología utilizar, todo mientras mantienen y mejoran los indicadores clave de rendimiento.
+                                </p>
+                                <div class="mbr-section-btn align-center">
+                                    <a class="btn btn-sm btn-secondary display-4" href="">
+                                        LEER MÁS
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mbr-col-sm-12 mbr-col-md-6 mbr-col-lg-3 last-child">
+                        <div class="card-wrapper">
+                            <div class="card-img">
+                                <amp-img src="assets/images/03.jpg" layout="responsive" height="170" width="255" alt="Mobirise" class="mobirise-loader">
+                                    <div placeholder="" class="placeholder">
+                                        <div class="mobirise-spinner">
+                                            <em></em>
+                                            <em></em>
+                                            <em></em>
+                                        </div></div>
+                                </amp-img>
+                            </div>
+                            <div class="card-box">
+                                <h4 class="card-title mbr-fonts-style align-center mbr-light display-2">
+                                    Resultados
+                                </h4>
+                                <p class="mbr-text mbr-fonts-style text-justify display-4">
+                                    Los editores y los anunciantes pueden decidir cómo presentar su contenido y qué proveedores de tecnología utilizar, todo mientras mantienen y mejoran los indicadores clave de rendimiento.
+                                </p>
+                                <div class="mbr-section-btn align-center">
+                                    <a class="btn btn-sm btn-secondary display-4" href="">
+                                        LEER MÁS
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            
-            <div class="card mbr-col-sm-12 mbr-col-md-6 mbr-col-lg-3">
-                <div class="card-wrapper">
-                    <div class="card-img">
-                        <amp-img src="assets/images/01.jpg" layout="responsive" height="170" width="255" alt="Mobirise" class="mobirise-loader">
-                            <div placeholder="" class="placeholder">
-                                <div class="mobirise-spinner">
-                                    <em></em>
-                                    <em></em>
-                                    <em></em>
-                                </div></div>
-                            
-                        </amp-img>
+        </article>
+        <article>
+            <div id="servicios">
+                <h1 class="mbr-fonts-style mbr-section-title align-center mbr-black mbr-bold display-1" id="zoom-h1">
+                Nuestros servicios
+                </h1>
+                <h2 class="mbr-fonts-style mbr-section-subtitle align-center mbr-black mbr-light display-2">
+                Brindando la solución a tus necesidades.
+                </h2>
+                <div class="mbr-row mbr-justify-content-center">
+                    <div class="card mbr-col-sm-12 mbr-col-md-6 mbr-col-lg-3">
+                        <div class="card-wrapper">
+                            <div class="card-box">
+                                <h4 class="card-title mbr-fonts-style align-center mbr-light display-2">
+                                    Rendimiento 
+                                </h4>
+                                <p class="mbr-text mbr-fonts-style text-justify display-4">
+                                    Los editores y los anunciantes pueden decidir cómo presentar su contenido y qué proveedores de tecnología utilizar, todo mientras mantienen y mejoran los indicadores clave de rendimiento.
+                                </p>
+                                <div class="mbr-section-btn align-center">
+                                    <a class="btn btn-sm btn-secondary display-4" href="">
+                                        LEER MÁS
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="card-box">
-                        <h4 class="card-title mbr-fonts-style align-center mbr-light display-2">
-                            Compromisos
-                        </h4>
-                        <p class="mbr-text mbr-fonts-style text-justify display-4">
-                            Los editores y los anunciantes pueden decidir cómo presentar su contenido y qué proveedores de tecnología utilizar, todo mientras mantienen y mejoran los indicadores clave de rendimiento.
-                        </p>
-                        <div class="mbr-section-btn align-center">
-                            <a class="btn btn-sm btn-secondary display-4" href="">
-                                LEER MÁS
-                            </a>
+                    <div class="card mbr-col-sm-12 mbr-col-md-6 mbr-col-lg-3">
+                        <div class="card-wrapper">
+                            <div class="card-box">
+                                <h4 class="card-title mbr-fonts-style align-center mbr-light display-2">
+                                    Compromisos
+                                </h4>
+                                <p class="mbr-text mbr-fonts-style text-justify display-4">
+                                    Los editores y los anunciantes pueden decidir cómo presentar su contenido y qué proveedores de tecnología utilizar, todo mientras mantienen y mejoran los indicadores clave de rendimiento.
+                                </p>
+                                <div class="mbr-section-btn align-center">
+                                    <a class="btn btn-sm btn-secondary display-4" href="">
+                                        LEER MÁS
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mbr-col-sm-12 mbr-col-md-6 mbr-col-lg-3">
+                        <div class="card-wrapper">
+                            <div class="card-box">
+                                <h4 class="card-title mbr-fonts-style align-center mbr-light display-2">
+                                    Flexibilidad
+                                </h4>
+                                <p class="mbr-text mbr-fonts-style text-justify display-4">
+                                    Los editores y los anunciantes pueden decidir cómo presentar su contenido y qué proveedores de tecnología utilizar, todo mientras mantienen y mejoran los indicadores clave de rendimiento.
+                                </p>
+                                <div class="mbr-section-btn align-center">
+                                    <a class="btn btn-sm btn-secondary display-4" href="">
+                                        LEER MÁS
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <div class="card mbr-col-sm-12 mbr-col-md-6 mbr-col-lg-3">
-                <div class="card-wrapper">
-                    <div class="card-img">
-                        <amp-img src="assets/images/02.jpg" layout="responsive" height="170" width="255" alt="Mobirise" class="mobirise-loader">
-                            <div placeholder="" class="placeholder">
-                                <div class="mobirise-spinner">
-                                    <em></em>
-                                    <em></em>
-                                    <em></em>
-                                </div></div>
-                            
-                        </amp-img>
-                    </div>
-                    <div class="card-box">
-                        <h4 class="card-title mbr-fonts-style align-center mbr-light display-2">
-                            Flexibilidad
-                        </h4>
-                        <p class="mbr-text mbr-fonts-style text-justify display-4">
-                            Los editores y los anunciantes pueden decidir cómo presentar su contenido y qué proveedores de tecnología utilizar, todo mientras mantienen y mejoran los indicadores clave de rendimiento.
-                        </p>
-                        <div class="mbr-section-btn align-center">
-                            <a class="btn btn-sm btn-secondary display-4" href="">
-                                LEER MÁS
-                            </a>
+        </article>
+    </section>
+    <footer>
+            <div class="footer" id="footer">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
+                                <h3><a href="#products">Productos</a></h3>
+                            </div>
+                            <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
+                                <h3><a href="#servicios">Servicios</a></h3>
+                            </div>
+                            <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
+                                <h3><a href="#home">Nosotros</a></h3>
+                            </div>
+                            <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
+                                <h3><a href="">Contacto</a></h3>
+                            </div>
+                            <div class="col-lg-3  col-md-3 col-sm-6 col-xs-12 ">
+                                <h3>Seguinos</h3>
+                                <ul class="social">
+                                    <li> <a href="#"> <i class="fab fa-facebook">   </i> </a> </li>
+                                    <li> <a href="#"> <i class="fab fa-twitter">   </i> </a> </li>
+                                    <li> <a href="#"> <i class="fab fa-google-plus">   </i> </a> </li>
+                                    <li> <a href="#"> <i class="fab fa-pinterest">   </i> </a> </li>
+                                    <li> <a href="#"> <i class="fab fa-youtube">   </i> </a> </li>
+                                </ul>
+                            </div>
                         </div>
+                        <!--/.row--> 
                     </div>
+                    <!--/.container--> 
                 </div>
-            </div>
-
-            <div class="card mbr-col-sm-12 mbr-col-md-6 mbr-col-lg-3 last-child">
-                <div class="card-wrapper">
-                    <div class="card-img">
-                        <amp-img src="assets/images/03.jpg" layout="responsive" height="170" width="255" alt="Mobirise" class="mobirise-loader">
-                            <div placeholder="" class="placeholder">
-                                <div class="mobirise-spinner">
-                                    <em></em>
-                                    <em></em>
-                                    <em></em>
-                                </div></div>
-                            
-                        </amp-img>
+                <!--/.footer-->
+                
+                <!-- <div class="footer-bottom">
+                    <div class="container">
+                        <p class="pull-left"> Copyright NE 2019. All rights reserved. </p>
                     </div>
-                    <div class="card-box">
-                        <h4 class="card-title mbr-fonts-style align-center mbr-light display-2">
-                            Resultados
-                        </h4>
-                        <p class="mbr-text mbr-fonts-style text-justify display-4">
-                            Los editores y los anunciantes pueden decidir cómo presentar su contenido y qué proveedores de tecnología utilizar, todo mientras mantienen y mejoran los indicadores clave de rendimiento.
-                        </p>
-                        <div class="mbr-section-btn align-center">
-                            <a class="btn btn-sm btn-secondary display-4" href="">
-                                LEER MÁS
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-        </div>
-    </div>
-</section>
-<section>
-  <div id="servicios">
-    <h1 class="mbr-fonts-style mbr-section-title align-center mbr-black mbr-bold display-1" id="zoom-h1">
-      Nuestros servicios
-  </h1>
-  <h2 class="mbr-fonts-style mbr-section-subtitle align-center mbr-black mbr-light display-2">
-      Brindando la solución a tus necesidades.
-  </h2>
-  <div class="mbr-row mbr-justify-content-center">
-    <div class="card mbr-col-sm-12 mbr-col-md-6 mbr-col-lg-3">
-        <div class="card-wrapper">
-            
-            <div class="card-box">
-                <h4 class="card-title mbr-fonts-style align-center mbr-light display-2">
-                    Rendimiento 
-                </h4>
-                <p class="mbr-text mbr-fonts-style text-justify display-4">
-                    Los editores y los anunciantes pueden decidir cómo presentar su contenido y qué proveedores de tecnología utilizar, todo mientras mantienen y mejoran los indicadores clave de rendimiento.
-                </p>
-                <div class="mbr-section-btn align-center">
-                    <a class="btn btn-sm btn-secondary display-4" href="">
-                        LEER MÁS
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <div class="card mbr-col-sm-12 mbr-col-md-6 mbr-col-lg-3">
-        <div class="card-wrapper">
-            <div class="card-box">
-                <h4 class="card-title mbr-fonts-style align-center mbr-light display-2">
-                    Compromisos
-                </h4>
-                <p class="mbr-text mbr-fonts-style text-justify display-4">
-                    Los editores y los anunciantes pueden decidir cómo presentar su contenido y qué proveedores de tecnología utilizar, todo mientras mantienen y mejoran los indicadores clave de rendimiento.
-                </p>
-                <div class="mbr-section-btn align-center">
-                    <a class="btn btn-sm btn-secondary display-4" href="">
-                        LEER MÁS
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="card mbr-col-sm-12 mbr-col-md-6 mbr-col-lg-3">
-        <div class="card-wrapper">
-           
-            <div class="card-box">
-                <h4 class="card-title mbr-fonts-style align-center mbr-light display-2">
-                    Flexibilidad
-                </h4>
-                <p class="mbr-text mbr-fonts-style text-justify display-4">
-                    Los editores y los anunciantes pueden decidir cómo presentar su contenido y qué proveedores de tecnología utilizar, todo mientras mantienen y mejoran los indicadores clave de rendimiento.
-                </p>
-                <div class="mbr-section-btn align-center">
-                    <a class="btn btn-sm btn-secondary display-4" href="">
-                        LEER MÁS
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-  </div>
-</section>
+                </div> -->
+    </footer>
 </body>
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </html>

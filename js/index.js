@@ -78,7 +78,6 @@ window.onload = function () {
 	window.addEventListener(
 		'scroll',
 		function () {
-			console.log(window.pageYOffset);
 			var st = window.pageYOffset || document.documentElement.scrollTop;
 			if (st > lastScrollTop) {
 				if (window.pageYOffset > 380) {
@@ -121,5 +120,45 @@ window.onload = function () {
 
 	function scrollToTop () {
 		window.scrollTo(0, 0);
+	}
+
+	// Activar item elegido en el menu
+
+	let items = document.getElementsByClassName('nav-link');
+	for (i = 0; i < items.length; i++) {
+		items[i].addEventListener('click', function (e) {
+			for (j = 0; j < items.length; j++) {
+				console.log(items[j]);
+				items[j].classList.remove('active');
+				console.log(items[j]);
+			}
+			e.target.classList.add('active');
+		});
+	}
+
+	// prueba geolocalizacion
+	if ('geolocation' in navigator) {
+		navigator.geolocation.getCurrentPosition((position) => {
+			let lat = position.coords.latitude;
+			let lon = position.coords.longitude;
+			consulta(lat, lon);
+		});
+
+		function consulta (lat, lon) {
+			const API_KEY = `4d66756d2f1463d481841de10d882e5a`;
+			const URL = 'https://api.openweathermap.org/data/2.5/weather';
+			const URL_API = `${URL}?lat=${lat}&lon=${lon}&appid=${API_KEY}`;
+
+			fetch(URL_API)
+				.then((data) => {
+					return data.json();
+				})
+				.then((weather_data) => {
+					const data = weather_data;
+					// console.log(transformarDatos(data));
+					console.log(data);
+					document.getElementById('location').innerHTML = data.name;
+				});
+		}
 	}
 };
